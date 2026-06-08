@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/warzone.png">
+    <title>DEV-Desenvolvimento de sistemas </title>
+    <meta name="description" content="Separaçao de turmas do curso de desenvolvimento de sistemas">
+    <meta name="keywords" content="Turmas, teste, desenvolvimento de sistemas, DEV, Lellis, Amaral">
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+    <h1>OLÁ MUNDO</h1>
+    <hr>
+    <script>
+        window.alert("Seja bem-vindo ao site");
+        let nome = window.prompt("Qual é o seu nome?");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página? ");
+        console.log(resposta);
+        document.write("Seja bem-vindo" + nome);
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); // 3000 milissegundos = 3 segundos
+        }else{
+            window.confirm(nome + ", Você vai continuar nessa página!")
+        }
+    </script>
+    
+</body>
+
+</html>
