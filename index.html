@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV-Desenvolvimento de sistemas </title>
+    <meta name="description" content="Separaçao de turmas do curso de desenvolvimento de sistemas">
+    <meta name="keywords" content="Turmas, teste, desenvolvimento de sistemas, DEV, Lellis, Amaral">
+    <meta name="author" content="Rian Thiago, rianth731@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>    
+    <h1> <mark>Manipulando elementos (tags)</mark> do html através do js</h1>
+    <hr>
+    <div>
+        <p>Estamos aprendendo javascript</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar </p>
+    </div>
+
+    <script>
+        const tags_p = document.getElementsByTagName('p');
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+        tag_p_1.style.backgroundColor = "red";
+        tag_p_1.style.color = "yellow";
+        tag_p_1.style.fontSize = "30px";
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.backgroundColor = "blue";
+        tag_p_2.style.color = "white";
+        tag_p_2.style.fontSize = "30px";
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor = "green";
+        tag_p_3.style.color = "white";
+        tag_p_3.style.fontSize = "30px";
+    </script>
+</body>
+
+</html>

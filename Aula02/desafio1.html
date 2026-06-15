@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - INTRODUÇÃO AO JAVASCRIPT</title>
+    <meta name="description" content="Separaçao de turmas do curso de desenvolvimento de sistemas">
+    <meta name="keywords" content="Turmas, teste, desenvolvimento de sistemas, DEV, Lellis, Amaral">
+    <meta name="author" content="Rian Thiago">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1><mark> MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRAVES DO JS </h1>
+    <hr>
+    
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <p>Aprender é muito legal</p>
+        <p> E pra ajudar o aprendizado</p>
+        <p> E para ajudar o aprendizado, é preciso praticar e exercitar</p>
+    </div>
+
+    <script>
+        const tags_p = document.getElementsByTagName("p");
+        console.log(tags_p);
+        
+        let tag_p_1 = tags_p[0];
+        tag_p_1.style.backgroundColor = "red";
+        tag_p_1.style.color = "white";
+        tag_p_1.style.fontSize = "30px";
+        tag_p_1.style.fontWeight = "bold";
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.backgroundColor = "blue";
+        tag_p_2.style.color = "white";
+        tag_p_2.style.fontSize = "30px";
+        tag_p_2.style.fontWeight = "bold";
+
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor = "orange";
+        tag_p_3.style.color = "white";
+        tag_p_3.style.fontSize = "30px";
+        tag_p_3.style.fontWeight = "bold";
+
+        let tag_p_4 = tags_p[3];
+        tag_p_4.style.backgroundColor = "cyan";
+        tag_p_4.style.color = "black"; 
+        tag_p_4.style.fontSize = "30px";
+        tag_p_4.style.fontWeight = "bold";
+
+        tag_p_3.innerText = "A TURMA DO DEV É ESPECTACULAR DEMAIS!";
+        tag_p_3.style.textTransform = "uppercase";
+        tag_p_3.style.textAlign = "center";
+
+        const tags_div = document.getElementsByTagName("div");
+        console.log(tags_div); 
+
+        let div1 = tags_div[0];
+        div1.style.backgroundColor = "gray";
+        div1.style.fontFamily = "Arial"; 
+        div1.style.padding = "15px"; 
+        div1.style.borderRadius = "20px";
+        div1.style.border = "2px solid white";
+        div1.style.margin = "20px";
+        div1.style.boxShadow = "5px 5px 10px gray";
+        div1.style.textAlign = "center";
+        div1.style.width = "80%";
+        div1.style.marginLeft = "auto";
+        div1.style.marginRight = "auto";
+        
+
+        const body = document.getElementsByTagName("body");
+        console.log(body);
+        let body1 = body[0];
+
+        body1.style.backgroundColor = "lightgray";
+        body1.style.color = "black";
+        body1.style.fontFamily = "Verdana, sans-serif";
+        body1.style.padding = "20px";
+        body1.style.textAlign = "center";
+        body1.style.margin = "0";
+        body1.style.boxSizing = "border-box";
+        body1.style.minHeight = "100vh";
+        body1
+        
+     
+
+        const novo_p = document.createElement("p");
+        novo_p.innerText = "Eu fui adicionado de forma dinâmica";
+        novo_p.style.color = "cyan"; 
+        novo_p.style.fontSize = "25px";
+        novo_p.style.fontWeight = "bold";
+        novo_p.style.textAlign = "center";
+        novo_p.style.marginTop = "20px";
+        novo_p.style.textShadow = "2px 2px 5px gray";
+        novo_p.style.textTransform = "uppercase";
+        novo_p.style.fontFamily = "Verdana, sans-serif";
+        novo_p.style.backgroundColor = "black";
+        novo_p.style.padding = "10px";
+        novo_p.style.borderRadius = "10px";
+        novo_p.style.border = "2px solid white";
+        novo_p.style.boxShadow = "5px 5px 10px gray";
+        novo_p.style.width = "60%";
+        novo_p.style.marginLeft = "auto";
+        novo_p.style.marginRight = "auto";
+        novo_p.style.marginBottom = "20px";
+        div1.appendChild(novo_p);
+
+        document.write("<h2> UAAU, <mark>JAVASCRIPT É MUITO LEGAL</mark> </h2>");
+    </script>
+
+</body>
+</html>
